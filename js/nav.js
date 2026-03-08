@@ -16,7 +16,7 @@
   /* ── Scroll: add .scrolled class ── */
   function handleScroll() {
     if (!nav) return;
-    if (window.scrollY > 80) {
+    if (window.scrollY > 60) {
       nav.classList.add('scrolled');
     } else {
       nav.classList.remove('scrolled');
