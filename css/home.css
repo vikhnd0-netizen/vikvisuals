@@ -372,14 +372,16 @@
   gap: 0;
   position: relative;
   margin-top: 3rem;
+  /* --process-line-offset: offset from edge to step card centre (100%/8 = 12.5% for 4-col grid) */
+  --process-line-offset: 12.5%;
 }
 
 .process-steps::before {
   content: '';
   position: absolute;
   top: 28px;
-  left: calc(12.5% + 24px);
-  right: calc(12.5% + 24px);
+  left: calc(var(--process-line-offset) + 24px);
+  right: calc(var(--process-line-offset) + 24px);
   height: 1px;
   background: var(--color-accent);
   opacity: 0.4;

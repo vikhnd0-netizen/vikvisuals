@@ -60,8 +60,9 @@
 
   function updateCounter() {
     if (!counterEl) return;
-    var num = String(current + 1).padStart(2, '0');
-    counterEl.textContent = num + ' / 0' + slides.length;
+    var num   = String(current + 1).padStart(2, '0');
+    var total = String(slides.length).padStart(2, '0');
+    counterEl.textContent = num + ' / ' + total;
   }
 
   function goTo(index) {
