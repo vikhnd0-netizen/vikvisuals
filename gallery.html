@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — VikVisuals</title>
+  <meta name="description" content="VikVisuals gallery — photography and videography work across professional services, charity, events, hospitality and food.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VikVisuals</a>
+      <ul class="nav__links">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Services ▾
+          </button>
+          <div class="nav__dropdown-menu" role="menu">
+            <a href="services/professional.html" role="menuitem">Professional Services</a>
+            <a href="services/charity.html" role="menuitem">Charity</a>
+            <a href="services/events.html" role="menuitem">Events</a>
+            <a href="services/hospitality.html" role="menuitem">Hospitality</a>
+            <a href="services/food-restaurant.html" role="menuitem">Food &amp; Restaurant</a>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <button class="nav__mobile-dropdown-trigger" aria-expanded="false">Services ▾</button>
+    <div class="nav__mobile-sub">
+      <a href="services/professional.html">Professional Services</a>
+      <a href="services/charity.html">Charity</a>
+      <a href="services/events.html">Events</a>
+      <a href="services/hospitality.html">Hospitality</a>
+      <a href="services/food-restaurant.html">Food &amp; Restaurant</a>
+    </div>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <div class="gallery-page__hero">
+    <div class="container">
+      <span class="section__tag">Portfolio</span>
+      <h1>Gallery</h1>
+      <p>A selection of work across professional services, charity, events, hospitality and food.</p>
+    </div>
+  </div>
+
+  <!-- ── Filter Bar ── -->
+  <div class="gallery-page">
+    <div class="gallery-filter" role="toolbar" aria-label="Filter gallery by category">
+      <button class="gallery-filter__btn active" data-filter="all">All</button>
+      <button class="gallery-filter__btn" data-filter="professional">Professional</button>
+      <button class="gallery-filter__btn" data-filter="charity">Charity</button>
+      <button class="gallery-filter__btn" data-filter="events">Events</button>
+      <button class="gallery-filter__btn" data-filter="hospitality">Hospitality</button>
+      <button class="gallery-filter__btn" data-filter="food">Food</button>
+    </div>
+
+    <!-- ── Masonry Grid ── -->
+    <div class="gallery-masonry">
+
+      <div class="gallery-masonry__item" data-category="professional">
+        <img src="/images/placeholder.jpg" alt="Corporate conference photography for professional services firm" class="gallery-masonry__img img-placeholder" style="height:320px;" loading="lazy" width="600" height="320">
+        <span class="gallery-masonry__label">Professional</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="charity">
+        <img src="/images/placeholder.jpg" alt="Charity fundraising gala photography" class="gallery-masonry__img img-placeholder" style="height:260px;" loading="lazy" width="600" height="260">
+        <span class="gallery-masonry__label">Charity</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="events">
+        <img src="/images/placeholder.jpg" alt="Corporate gala dinner event photography" class="gallery-masonry__img img-placeholder" style="height:380px;" loading="lazy" width="600" height="380">
+        <span class="gallery-masonry__label">Events</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="professional">
+        <img src="/images/placeholder.jpg" alt="Professional headshots for financial services firm" class="gallery-masonry__img img-placeholder" style="height:290px;" loading="lazy" width="600" height="290">
+        <span class="gallery-masonry__label">Professional</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="hospitality">
+        <img src="/images/placeholder.jpg" alt="Hotel venue interior photography" class="gallery-masonry__img img-placeholder" style="height:340px;" loading="lazy" width="600" height="340">
+        <span class="gallery-masonry__label">Hospitality</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="food">
+        <img src="/images/placeholder.jpg" alt="Restaurant menu dish photography" class="gallery-masonry__img img-placeholder" style="height:280px;" loading="lazy" width="600" height="280">
+        <span class="gallery-masonry__label">Food</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="charity">
+        <img src="/images/placeholder.jpg" alt="Parliamentary reception photography for charity awareness day" class="gallery-masonry__img img-placeholder" style="height:310px;" loading="lazy" width="600" height="310">
+        <span class="gallery-masonry__label">Charity</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="events">
+        <img src="/images/placeholder.jpg" alt="Award ceremony and gala dinner photography" class="gallery-masonry__img img-placeholder" style="height:260px;" loading="lazy" width="600" height="260">
+        <span class="gallery-masonry__label">Events</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="professional">
+        <img src="/images/placeholder.jpg" alt="Office team photography and brand imagery" class="gallery-masonry__img img-placeholder" style="height:350px;" loading="lazy" width="600" height="350">
+        <span class="gallery-masonry__label">Professional</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="food">
+        <img src="/images/placeholder.jpg" alt="Restaurant atmosphere photography" class="gallery-masonry__img img-placeholder" style="height:290px;" loading="lazy" width="600" height="290">
+        <span class="gallery-masonry__label">Food</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="charity">
+        <img src="/images/placeholder.jpg" alt="Community event photography for charity" class="gallery-masonry__img img-placeholder" style="height:320px;" loading="lazy" width="600" height="320">
+        <span class="gallery-masonry__label">Charity</span>
+      </div>
+
+      <div class="gallery-masonry__item" data-category="hospitality">
+        <img src="/images/placeholder.jpg" alt="Staff portraiture for hospitality brand" class="gallery-masonry__img img-placeholder" style="height:270px;" loading="lazy" width="600" height="270">
+        <span class="gallery-masonry__label">Hospitality</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Lightbox ── -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous image">&#8592;</button>
+    <img class="lightbox__img" src="" alt="" style="background-color:#2a2a2a;">
+    <button class="lightbox__next" aria-label="Next image">&#8594;</button>
+  </div>
+
+  <!-- ── CTA Banner ── -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner__title">Planning a project? <span>Let's talk.</span></h2>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">VikVisuals</div>
+          <p class="footer__tagline">London-based photographer &amp; videographer for professional services, charities and events.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="services/professional.html">Professional Services</a></li>
+            <li><a href="services/charity.html">Charity</a></li>
+            <li><a href="services/events.html">Events</a></li>
+            <li><a href="services/hospitality.html">Hospitality</a></li>
+            <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Get in Touch</p>
+          <div class="footer__contact-info">
+            <a href="mailto:hello@vikvisuals.co.uk">hello@vikvisuals.co.uk</a>
+            <span>London-based, working nationwide</span>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 VikVisuals. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
