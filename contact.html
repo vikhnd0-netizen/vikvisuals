@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — VikVisuals</title>
+  <meta name="description" content="Get in touch with VikVisuals — London-based photographer and videographer for professional services, charities and events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VikVisuals</a>
+      <ul class="nav__links">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Services ▾
+          </button>
+          <div class="nav__dropdown-menu" role="menu">
+            <a href="services/professional.html" role="menuitem">Professional Services</a>
+            <a href="services/charity.html" role="menuitem">Charity</a>
+            <a href="services/events.html" role="menuitem">Events</a>
+            <a href="services/hospitality.html" role="menuitem">Hospitality</a>
+            <a href="services/food-restaurant.html" role="menuitem">Food &amp; Restaurant</a>
+          </div>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <button class="nav__mobile-dropdown-trigger" aria-expanded="false">Services ▾</button>
+    <div class="nav__mobile-sub">
+      <a href="services/professional.html">Professional Services</a>
+      <a href="services/charity.html">Charity</a>
+      <a href="services/events.html">Events</a>
+      <a href="services/hospitality.html">Hospitality</a>
+      <a href="services/food-restaurant.html">Food &amp; Restaurant</a>
+    </div>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <div class="contact-page__hero">
+    <div class="container">
+      <span class="section__tag">Let's Talk</span>
+      <h1>Get in Touch</h1>
+      <p>Based in London, working nationwide. Always happy to discuss a project, no matter how early-stage.</p>
+    </div>
+  </div>
+
+  <!-- ── Contact Body ── -->
+  <div class="contact-page">
+    <div class="contact-body">
+      <div class="container">
+        <div class="grid-2col" style="align-items:start;gap:4rem;">
+
+          <!-- Left col -->
+          <div class="reveal">
+            <span class="section__tag">Start a conversation</span>
+            <div class="accent-line"></div>
+            <h2 style="margin-bottom:1.5rem;">Let's work together</h2>
+            <p class="contact-info__lead">Whether you're planning a conference, a fundraising event, a brand shoot or something else entirely — get in touch and let's have a conversation about how I can help.</p>
+            <div class="contact-info__items">
+              <div class="contact-info__item">
+                <span class="contact-info__icon">✉</span>
+                <div class="contact-info__text">
+                  <a href="mailto:hello@vikvisuals.co.uk">hello@vikvisuals.co.uk</a>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="contact-info__icon">📍</span>
+                <div class="contact-info__text">London-based, working nationwide</div>
+              </div>
+            </div>
+            <p style="color:var(--color-grey-mid);font-size:0.9rem;margin-top:2rem;">I typically respond within one business day.</p>
+          </div>
+
+          <!-- Right col: Form -->
+          <div class="reveal" style="transition-delay:0.1s;">
+            <div class="contact-form">
+              <!-- TODO: Connect to Formspree or Netlify Forms -->
+              <form id="contact-form" action="#" method="post" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name <span style="color:var(--color-accent)">*</span></label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="company" class="form-label">Company / Organisation <span class="optional">(optional)</span></label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Your company" autocomplete="organization">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email <span style="color:var(--color-accent)">*</span></label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="hello@example.com" required autocomplete="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone <span class="optional">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+44 7700 000000" autocomplete="tel">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="service" class="form-label">Service <span style="color:var(--color-accent)">*</span></label>
+                  <select id="service" name="service" class="form-select" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="professional">Professional Services</option>
+                    <option value="charity">Charity</option>
+                    <option value="events">Events</option>
+                    <option value="hospitality">Hospitality</option>
+                    <option value="food">Food &amp; Restaurant</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message <span style="color:var(--color-accent)">*</span></label>
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+              </form>
+              <div class="form-success" id="form-success" role="alert">
+                <strong>Message received!</strong>
+                Thank you for getting in touch. I'll be in touch within one business day.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">VikVisuals</div>
+          <p class="footer__tagline">London-based photographer &amp; videographer for professional services, charities and events.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="services/professional.html">Professional Services</a></li>
+            <li><a href="services/charity.html">Charity</a></li>
+            <li><a href="services/events.html">Events</a></li>
+            <li><a href="services/hospitality.html">Hospitality</a></li>
+            <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Get in Touch</p>
+          <div class="footer__contact-info">
+            <a href="mailto:hello@vikvisuals.co.uk">hello@vikvisuals.co.uk</a>
+            <span>London-based, working nationwide</span>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 VikVisuals. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    // Contact form — prevent default, show thank-you
+    (function () {
+      var form    = document.getElementById('contact-form');
+      var success = document.getElementById('form-success');
+      if (!form || !success) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        form.style.display = 'none';
+        success.classList.add('visible');
+        success.focus();
+      });
+    }());
+  </script>
+</body>
+</html>
