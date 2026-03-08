@@ -152,3 +152,11 @@
 @media (max-width: 768px) {
   .about-teaser__img-wrap::after { display: none; }
 }
+
+/* ── Work with card note ──────────────────────────────────── */
+.work-with__note {
+  margin-top: 0.5rem;
+  color: var(--color-accent);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
