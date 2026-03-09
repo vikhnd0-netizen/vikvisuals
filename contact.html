@@ -29,7 +29,8 @@
             <a href="services/food-restaurant.html" role="menuitem">Food &amp; Restaurant</a>
           </div>
         </li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
       <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -45,16 +46,16 @@
       <a href="services/events-hospitality.html">Events &amp; Hospitality</a>
       <a href="services/food-restaurant.html">Food &amp; Restaurant</a>
     </div>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery.html">Work</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </div>
 
   <!-- ── Hero ── -->
   <div class="contact-page__hero">
     <div class="container">
-      <span class="section__tag">Let's Talk</span>
-      <h1>Get in Touch</h1>
-      <p>Based in London, working nationwide. Always happy to discuss a project, no matter how early-stage.</p>
+      <h1>Let's work together.</h1>
+      <p>Whether you have a brief or just an idea — get in touch and we'll go from there.</p>
     </div>
   </div>
 
@@ -66,10 +67,10 @@
 
           <!-- Left col -->
           <div class="reveal">
-            <span class="section__tag">Start a conversation</span>
+            <span class="section__tag">Get in touch</span>
             <div class="accent-line"></div>
-            <h2 style="margin-bottom:1.5rem;">Let's work together</h2>
-            <p class="contact-info__lead">Whether you're planning a conference, a fundraising event, a brand shoot or something else entirely — get in touch and let's have a conversation about how I can help.</p>
+            <h2 style="margin-bottom:1.5rem;">Let's work together.</h2>
+            <p class="contact-info__lead">Whether you're planning a conference, a fundraising event, a brand shoot or something else entirely — get in touch and we'll have a conversation about how I can help.</p>
             <div class="contact-info__items">
               <div class="contact-info__item">
                 <span class="contact-info__icon">✉</span>
@@ -82,36 +83,29 @@
                 <div class="contact-info__text">London-based, working nationwide</div>
               </div>
             </div>
-            <p style="color:var(--color-grey-mid);font-size:0.9rem;margin-top:2rem;">I typically respond within one business day.</p>
+            <p style="color:var(--color-text-muted);font-size:0.9rem;margin-top:2rem;">I typically respond within one business day.</p>
           </div>
 
           <!-- Right col: Form -->
           <div class="reveal" style="transition-delay:0.1s;">
             <div class="contact-form">
-              <!-- TODO: Connect to Formspree or Netlify Forms -->
               <form id="contact-form" action="#" method="post" novalidate>
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="name" class="form-label">Name <span style="color:var(--color-accent)">*</span></label>
+                    <label for="name" class="form-label">Name <span style="color:var(--color-navy)">*</span></label>
                     <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
                   </div>
                   <div class="form-group">
-                    <label for="company" class="form-label">Company / Organisation <span class="optional">(optional)</span></label>
-                    <input type="text" id="company" name="company" class="form-input" placeholder="Your company" autocomplete="organization">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email" class="form-label">Email <span style="color:var(--color-accent)">*</span></label>
+                    <label for="email" class="form-label">Email <span style="color:var(--color-navy)">*</span></label>
                     <input type="email" id="email" name="email" class="form-input" placeholder="hello@example.com" required autocomplete="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone" class="form-label">Phone <span class="optional">(optional)</span></label>
-                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+44 7700 000000" autocomplete="tel">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="service" class="form-label">Service <span style="color:var(--color-accent)">*</span></label>
+                  <label for="phone" class="form-label">Phone <span class="optional">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+44 7700 000000" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label for="service" class="form-label">Project type <span style="color:var(--color-navy)">*</span></label>
                   <select id="service" name="service" class="form-select" required>
                     <option value="" disabled selected>Select a service</option>
                     <option value="professional">Professional Services</option>
@@ -122,7 +116,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="message" class="form-label">Message <span style="color:var(--color-accent)">*</span></label>
+                  <label for="message" class="form-label">Message <span style="color:var(--color-navy)">*</span></label>
                   <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary form-submit">Send Message</button>
@@ -154,7 +148,8 @@
             <li><a href="services/charity.html">Charity</a></li>
             <li><a href="services/events-hospitality.html">Events &amp; Hospitality</a></li>
             <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -188,7 +183,6 @@
 
   <script src="js/nav.js"></script>
   <script>
-    // Contact form — prevent default, show thank-you
     (function () {
       var form    = document.getElementById('contact-form');
       var success = document.getElementById('form-success');
