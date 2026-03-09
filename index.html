@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home — VikVisuals</title>
-  <meta name="description" content="VikVisuals — London-based photographer and videographer for professional services firms, charities and events. Photography and video that shows the people behind what you do.">
+  <meta name="description" content="VikVisuals — London-based photographer and videographer for professional services firms, charities and events. Photography and video built around your brand.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
@@ -16,22 +16,25 @@
   <!-- ── Navigation ── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">VikVisuals</a>
+      <a href="index.html" class="nav__logo" aria-label="VikVisuals home">
+        <span class="logo-pacifico logo-pacifico--navy">VikVisuals</span>
+      </a>
 
       <!-- Desktop links -->
       <ul class="nav__links">
+        <li><a href="gallery.html">Work</a></li>
         <li class="nav__dropdown">
-          <button class="nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          <button class="services-toggle nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
             Services ▾
           </button>
           <div class="nav__dropdown-menu" role="menu">
             <a href="services/professional.html" role="menuitem">Professional Services</a>
             <a href="services/charity.html" role="menuitem">Charity</a>
-            <a href="services/events-hospitality.html" role="menuitem">Events &amp; Hospitality</a>
             <a href="services/food-restaurant.html" role="menuitem">Food &amp; Restaurant</a>
+            <a href="services/events-hospitality.html" role="menuitem">Events &amp; Hospitality</a>
           </div>
         </li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
@@ -44,244 +47,273 @@
 
   <!-- Mobile nav drawer -->
   <div class="nav__mobile" aria-label="Mobile navigation">
-    <button class="nav__mobile-dropdown-trigger" aria-expanded="false">Services ▾</button>
+    <button class="nav__mobile-services-trigger" aria-expanded="false">Services ▾</button>
     <div class="nav__mobile-sub">
       <a href="services/professional.html">Professional Services</a>
       <a href="services/charity.html">Charity</a>
-      <a href="services/events-hospitality.html">Events &amp; Hospitality</a>
       <a href="services/food-restaurant.html">Food &amp; Restaurant</a>
+      <a href="services/events-hospitality.html">Events &amp; Hospitality</a>
     </div>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery.html">Work</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </div>
 
   <!-- ── Hero ── -->
-  <section class="hero hero--home" aria-label="Hero" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80');background-size:cover;background-position:center;">
-    <div class="container">
-      <div class="hero__content">
-        <span class="hero__tag">London-based Photographer &amp; Videographer</span>
-        <h1 class="hero__title">
-          Professional photography<br>
-          <span class="hero__gold">and video, built around</span><br>
-          your brand.
-        </h1>
-        <p class="hero__sub">Working with businesses, charities and event organisers across the UK to create striking visual content that gets results.</p>
-        <div class="hero__ctas">
-          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-          <a href="services/professional.html" class="btn btn-secondary">View Services</a>
-        </div>
+  <section class="hero" aria-label="Hero slideshow">
+
+    <!-- Slides -->
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=1920&q=90')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1920&q=90')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=90')"></div>
+    <div class="hero__slide" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=90')"></div>
+
+    <!-- Gradient overlay -->
+    <div class="hero__overlay"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <span class="hero__eyebrow">London · Photographer &amp; Videographer</span>
+      <h1 class="hero__title">Photography and video,<br>built around your brand.</h1>
+      <p class="hero__sub">Working with businesses, charities, event organisers and restaurants across the UK.</p>
+      <div class="hero__ctas">
+        <a href="gallery.html" class="btn-hero-primary">View My Work</a>
+        <a href="contact.html" class="btn-hero-secondary">Get in Touch</a>
       </div>
     </div>
-  </section>
 
-  <!-- ── Who I Work With ── -->
-  <section class="section work-with reveal" id="services">
-    <div class="container">
-      <div class="section__header section__header--center">
-        <span class="section__tag">What I Do</span>
-        <h2 class="section__title">Who I work with</h2>
-        <div class="accent-line accent-line--center"></div>
-      </div>
-      <div class="grid-3">
-        <div class="work-with__card reveal">
-          <div class="work-with__icon">🏢</div>
-          <h3 class="work-with__title">Professional Services</h3>
-          <p class="work-with__body">Headshots, leadership content, brand imagery and event coverage for firms that need visual content that builds trust.</p>
-          <br>
-          <a href="services/professional.html" class="btn btn-dark" style="font-size:0.78rem;padding:12px 24px;">Learn More</a>
-        </div>
-        <div class="work-with__card reveal" style="transition-delay:0.1s">
-          <div class="work-with__icon">🤝</div>
-          <h3 class="work-with__title">Charities &amp; Purpose-led Orgs</h3>
-          <p class="work-with__body">Fundraising galas, awareness events, community days and campaign content, delivered with care and flexibility.</p>
-          <p class="work-with__body work-with__note">Reduced rates available for registered charities.</p>
-          <br>
-          <a href="services/charity.html" class="btn btn-dark" style="font-size:0.78rem;padding:12px 24px;">Learn More</a>
-        </div>
-        <div class="work-with__card reveal" style="transition-delay:0.2s">
-          <div class="work-with__icon">📸</div>
-          <h3 class="work-with__title">Events &amp; Hospitality</h3>
-          <p class="work-with__body">Corporate conferences, gala dinners, award ceremonies and hospitality venues — reliable, unobtrusive coverage that captures the moment.</p>
-          <br>
-          <a href="services/events-hospitality.html" class="btn btn-dark" style="font-size:0.78rem;padding:12px 24px;">Learn More</a>
-        </div>
-      </div>
+    <!-- Dots -->
+    <div class="hero__dots" role="tablist" aria-label="Slideshow navigation">
+      <button class="hero__dot" role="tab" aria-label="Slide 1"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 2"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 3"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 4"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 5"></button>
     </div>
+
+    <!-- Counter -->
+    <div class="hero__counter" aria-hidden="true">01 / 05</div>
+
   </section>
 
-  <!-- ── About Teaser ── -->
-  <section class="section about-teaser reveal">
-    <div class="container">
-      <div class="grid-2col">
-        <div>
-          <span class="section__tag">About Vik</span>
-          <div class="accent-line"></div>
-          <h2 class="section__title">The person behind the lens</h2>
-          <blockquote class="about-teaser__quote">
-            "I'm Vik, a London-based photographer and videographer working with brands, businesses and organisations to create visual content that shows the people behind what they do."
-          </blockquote>
-          <p style="color:var(--color-grey-mid);margin-bottom:2rem;">Before going freelance, I spent several years working in-house producing content across a range of industries — including the automotive sector with Topaz Detailing, and financial services with Sedulo, a Top 100 UK professional services firm.</p>
-          <a href="contact.html" class="btn btn-primary">More About Me</a>
-        </div>
-        <div class="about-teaser__img-wrap reveal" style="transition-delay:0.15s">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
-            alt="Vik, London-based photographer and videographer"
-            class="about-teaser__img"
-            width="600" height="750"
-            loading="lazy"
-          >
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Client Logos ── -->
-  <div class="logos-strip reveal">
-    <div class="container">
-      <p class="logos-strip__label">Trusted by</p>
-      <ul class="logos-strip__list">
-        <li class="logos-strip__item">Sedulo</li>
-        <li class="logos-strip__item">Genetic Alliance UK</li>
-        <li class="logos-strip__item">HBA Support</li>
-        <li class="logos-strip__item">Nexus</li>
-      </ul>
+  <!-- ── Intro Strip ── -->
+  <div class="intro-strip">
+    <div class="intro-strip__inner">
+      <p class="intro-strip__left">Reliable. Press-ready. Built around you.</p>
+      <p class="intro-strip__right">Photography and video for professional services firms, charities, event organisers and restaurants. Reliable, press-ready results with minimal disruption to your team or your day.</p>
     </div>
   </div>
 
-  <!-- ── Featured Work ── -->
-  <section class="section featured-work reveal">
-    <div class="container">
-      <div class="section__header section__header--center">
-        <span class="section__tag">Selected Work</span>
-        <h2 class="section__title">Featured Work</h2>
-        <div class="accent-line accent-line--center"></div>
-      </div>
-      <div class="grid-3" style="margin-bottom:3rem;">
-        <div class="work-card">
-          <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=800&q=80" alt="Professional services photography — corporate conference" class="work-card__img" width="600" height="450" loading="lazy">
-          <div class="work-card__overlay">
-            <span class="work-card__label">Professional Services</span>
-          </div>
-        </div>
-        <div class="work-card">
-          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80" alt="Charity fundraising gala photography" class="work-card__img" width="600" height="450" loading="lazy">
-          <div class="work-card__overlay">
-            <span class="work-card__label">Charity</span>
-          </div>
-        </div>
-        <div class="work-card">
-          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80" alt="Corporate event photography" class="work-card__img" width="600" height="450" loading="lazy">
-          <div class="work-card__overlay">
-            <span class="work-card__label">Events</span>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;">
-        <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
-      </div>
+  <!-- ── Services ── -->
+
+  <!-- 01 — Photo LEFT, text RIGHT, bg-alt -->
+  <div class="services-block services-block--bg-alt">
+    <div class="services-block__photo">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=90" alt="Professional services photography" loading="lazy">
     </div>
+    <div class="services-block__text">
+      <span class="services-block__num">01</span>
+      <span class="services-block__eyebrow">Business &amp; Professional</span>
+      <h2 class="services-block__heading">Professional Services</h2>
+      <p class="services-block__body">Headshots, leadership content, brand imagery and event coverage for firms that need visuals that build trust. From conferences and networking events to team photography — efficient, with minimal disruption.</p>
+      <a href="services/professional.html" class="services-block__cta">Learn more →</a>
+    </div>
+  </div>
+
+  <!-- 02 — Text LEFT, photo RIGHT, bg -->
+  <div class="services-block services-block--bg">
+    <div class="services-block__text">
+      <span class="services-block__num">02</span>
+      <span class="services-block__eyebrow">Charity &amp; Purpose-Led</span>
+      <h2 class="services-block__heading">Charity</h2>
+      <p class="services-block__body">Coverage of fundraising galas, awareness events, parliamentary receptions and community campaigns. Press-ready imagery delivered fast. Reduced rates for registered charities.</p>
+      <a href="services/charity.html" class="services-block__cta">Learn more →</a>
+    </div>
+    <div class="services-block__photo">
+      <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=90" alt="Charity event photography" loading="lazy">
+    </div>
+  </div>
+
+  <!-- 03 — Photo LEFT, text RIGHT, bg-alt -->
+  <div class="services-block services-block--bg-alt">
+    <div class="services-block__photo">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=90" alt="Food and restaurant photography" loading="lazy">
+    </div>
+    <div class="services-block__text">
+      <span class="services-block__num">03</span>
+      <span class="services-block__eyebrow">Food &amp; Restaurant</span>
+      <h2 class="services-block__heading">Food &amp; Restaurant</h2>
+      <p class="services-block__body">Natural, appetising food photography for menus, websites, social media and delivery platforms. Shot on location at your venue with minimal disruption to your service.</p>
+      <a href="services/food-restaurant.html" class="services-block__cta">Learn more →</a>
+    </div>
+  </div>
+
+  <!-- 04 — Text LEFT, photo RIGHT, bg -->
+  <div class="services-block services-block--bg">
+    <div class="services-block__text">
+      <span class="services-block__num">04</span>
+      <span class="services-block__eyebrow">Events &amp; Hospitality</span>
+      <h2 class="services-block__heading">Events &amp; Hospitality</h2>
+      <p class="services-block__body">Coverage of corporate conferences, gala dinners, award ceremonies and hospitality events. Calm and unobtrusive — capturing moments that matter without getting in the way.</p>
+      <a href="services/events-hospitality.html" class="services-block__cta">Learn more →</a>
+    </div>
+    <div class="services-block__photo">
+      <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=90" alt="Events and hospitality photography" loading="lazy">
+    </div>
+  </div>
+
+  <!-- ── Work Carousel ── -->
+  <section class="carousel-section" aria-label="Selected work">
+    <div class="carousel-header">
+      <span class="carousel-label">Selected Work</span>
+      <h2 class="carousel-heading">Recent work</h2>
+      <p class="carousel-sub">A selection of recent projects.</p>
+    </div>
+
+    <div class="carousel-wrap">
+      <button class="carousel-arrow carousel-arrow--prev" aria-label="Scroll left">&#8249;</button>
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=85" alt="Professional services" loading="lazy">
+          <span class="carousel-item__label">Professional</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=85" alt="Events photography" loading="lazy">
+          <span class="carousel-item__label">Events</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=85" alt="Charity photography" loading="lazy">
+          <span class="carousel-item__label">Charity</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85" alt="Food photography" loading="lazy">
+          <span class="carousel-item__label">Food</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=85" alt="Events photography" loading="lazy">
+          <span class="carousel-item__label">Events</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=85" alt="Professional photography" loading="lazy">
+          <span class="carousel-item__label">Professional</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=85" alt="Charity photography" loading="lazy">
+          <span class="carousel-item__label">Charity</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85" alt="Food photography" loading="lazy">
+          <span class="carousel-item__label">Food</span>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=85" alt="Hospitality photography" loading="lazy">
+          <span class="carousel-item__label">Hospitality</span>
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-arrow--next" aria-label="Scroll right">&#8250;</button>
+    </div>
+
+    <a href="gallery.html" class="carousel-gallery-link">View full gallery →</a>
   </section>
 
-  <!-- ── How It Works ── -->
-  <section class="process-section reveal">
-    <div class="container">
-      <div class="section__header section__header--center">
-        <span class="section__tag">The Process</span>
-        <h2 class="section__title">How It Works</h2>
-        <div class="accent-line accent-line--center"></div>
-        <p class="section__sub">A straightforward process from first conversation to final delivery.</p>
+  <!-- ── Trust Strip ── -->
+  <div class="trust-strip">
+    <div class="trust-strip__inner">
+      <span class="trust-strip__label">Trusted by</span>
+      <div class="trust-strip__rule"></div>
+      <div class="trust-strip__clients">
+        <span class="trust-strip__client">Sedulo</span>
+        <span class="trust-strip__sep">·</span>
+        <span class="trust-strip__client">Genetic Alliance UK</span>
+        <span class="trust-strip__sep">·</span>
+        <span class="trust-strip__client">HBA Support</span>
+        <span class="trust-strip__sep">·</span>
+        <span class="trust-strip__client">Nexus</span>
       </div>
+    </div>
+  </div>
+
+  <!-- ── Process ── -->
+  <section class="process-section" aria-labelledby="process-heading">
+    <div class="process-section__inner">
+      <span class="process-eyebrow">The Process</span>
+      <h2 class="process-heading" id="process-heading">Simple from start to finish</h2>
+      <p class="process-sub">From first conversation to final delivery.</p>
+
       <div class="process-steps">
         <div class="process-step">
           <span class="process-step__num">01</span>
-          <span class="process-step__title">Brief</span>
+          <hr class="process-step__line">
+          <p class="process-step__name">Brief</p>
           <p class="process-step__body">We start with a conversation. I'll get to understand your goals, audience and what success looks like for the project.</p>
         </div>
         <div class="process-step">
           <span class="process-step__num">02</span>
-          <span class="process-step__title">Plan</span>
+          <hr class="process-step__line">
+          <p class="process-step__name">Plan</p>
           <p class="process-step__body">I'll put together a clear approach — locations, shot list, timeline — so the day runs smoothly with minimal disruption to you.</p>
         </div>
         <div class="process-step">
           <span class="process-step__num">03</span>
-          <span class="process-step__title">Shoot</span>
+          <hr class="process-step__line">
+          <p class="process-step__name">Shoot</p>
           <p class="process-step__body">Calm, efficient coverage on the day. I work around you and your team, not the other way around.</p>
         </div>
         <div class="process-step">
           <span class="process-step__num">04</span>
-          <span class="process-step__title">Deliver</span>
+          <hr class="process-step__line">
+          <p class="process-step__name">Deliver</p>
           <p class="process-step__body">Edited, press-ready files delivered straight to your inbox. Fast turnaround, no chasing required.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── CTA Banner ── -->
-  <div class="cta-banner reveal">
-    <div class="container">
-      <h2 class="cta-banner__title">Planning a project? <span>Let's talk.</span></h2>
-      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  <!-- ── CTA Strip ── -->
+  <div class="cta-strip">
+    <div class="cta-strip__inner">
+      <div>
+        <h2 class="cta-strip__heading">Planning a project?</h2>
+        <p class="cta-strip__sub">Based in London, working nationwide.</p>
+      </div>
+      <div class="cta-strip__buttons">
+        <a href="contact.html" class="btn-cta-primary">Get in Touch</a>
+        <a href="gallery.html" class="btn-cta-secondary">View My Work</a>
+      </div>
     </div>
   </div>
 
   <!-- ── Footer ── -->
   <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__logo">VikVisuals</div>
-          <p class="footer__tagline">London-based photographer &amp; videographer for professional services, charities and events.</p>
-        </div>
-        <div>
-          <p class="footer__heading">Quick Links</p>
-          <ul class="footer__links">
-            <li><a href="services/professional.html">Professional Services</a></li>
-            <li><a href="services/charity.html">Charity</a></li>
-            <li><a href="services/events-hospitality.html">Events &amp; Hospitality</a></li>
-            <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer__heading">Get in Touch</p>
-          <div class="footer__contact-info">
-            <a href="mailto:hello@vikvisuals.co.uk">hello@vikvisuals.co.uk</a>
-            <span>London-based, working nationwide</span>
-          </div>
-          <div class="footer__socials">
-            <!-- Instagram -->
-            <a href="#" class="footer__social-link" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-              </svg>
-            </a>
-            <!-- LinkedIn -->
-            <a href="#" class="footer__social-link" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+    <div class="footer__grid">
+      <div>
+        <span class="logo-pacifico logo-pacifico--white">VikVisuals</span>
+        <p class="footer__tagline">London-based photographer &amp; videographer for professional services, charities and events.</p>
+      </div>
+      <div>
+        <p class="footer__col-heading">Services</p>
+        <ul class="footer__links">
+          <li><a href="services/professional.html">Professional Services</a></li>
+          <li><a href="services/charity.html">Charity</a></li>
+          <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
+          <li><a href="services/events-hospitality.html">Events &amp; Hospitality</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-heading">Contact</p>
+        <a href="mailto:hello@vikvisuals.co.uk" class="footer__contact-email">hello@vikvisuals.co.uk</a>
+        <span class="footer__contact-loc">London-based, working nationwide</span>
+        <a href="contact.html" class="footer__contact-cta">Get in Touch →</a>
       </div>
     </div>
-    <div class="footer__divider"></div>
-    <div class="container">
-      <div class="footer__bottom">
-        <p class="footer__copy">© 2026 VikVisuals. All rights reserved.</p>
-        <div class="footer__bottom-links">
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 VikVisuals &nbsp;·&nbsp; Photography · Video · London</p>
     </div>
   </footer>
 
   <script src="js/nav.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
