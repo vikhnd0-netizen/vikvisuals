@@ -59,6 +59,10 @@
   margin-bottom: 1.25rem;
 }
 
+.hero__accent {
+  color: #f0a500;
+}
+
 .hero__sub {
   font-size: 1.05rem;
   font-weight: 300;

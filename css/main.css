@@ -5,7 +5,7 @@
    ============================================================ */
 
 /* ── Google Fonts ─────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900&display=swap');
 
 /* ── Design Tokens ────────────────────────────────────────── */
 :root {
@@ -19,7 +19,6 @@
   --border:     #e0e0e0;
   --white:      #ffffff;
 
-  --font-logo: 'Pacifico', cursive;
   --font-main: 'Nunito Sans', system-ui, sans-serif;
 
   --nav-height: 68px;
@@ -171,16 +170,15 @@ p {
 }
 
 .nav__logo {
-  font-family: var(--font-logo);
-  font-size: 1.6rem;
-  color: var(--navy);
-  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-left: auto;
 }
 
 .nav__links > li > a,
@@ -243,11 +241,6 @@ p {
 .nav__dropdown-menu a:hover {
   color: var(--navy);
   background: var(--navy-light);
-}
-
-/* Nav CTA */
-.nav__cta {
-  margin-left: 1.5rem;
 }
 
 /* Hamburger */
@@ -347,10 +340,6 @@ p {
 
 .nav__mobile-sub a:last-child { border-bottom: none; }
 
-.nav__mobile .nav__cta-mobile {
-  padding: 16px 24px;
-}
-
 /* ── Eyebrow label ────────────────────────────────────────── */
 .eyebrow {
   display: block;
@@ -379,12 +368,8 @@ p {
 }
 
 .footer__logo {
-  font-family: var(--font-logo);
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--white);
-  margin-bottom: 1rem;
   display: block;
+  margin-bottom: 1rem;
 }
 
 .footer__tagline {
@@ -502,7 +487,6 @@ p {
 
 @media (max-width: 768px) {
   .nav__links { display: none; }
-  .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
   .nav__mobile { display: block; }
 
