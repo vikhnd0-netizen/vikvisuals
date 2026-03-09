@@ -58,10 +58,12 @@
     });
   });
 
-  /* Pause on hover */
+  /* Pause on hover or focus within hero */
   if (hero) {
     hero.addEventListener('mouseenter', stopTimer);
     hero.addEventListener('mouseleave', startTimer);
+    hero.addEventListener('focusin',  stopTimer);
+    hero.addEventListener('focusout', startTimer);
   }
 
 })();
