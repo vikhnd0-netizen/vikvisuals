@@ -414,8 +414,8 @@ p {
 }
 
 .footer__social-link:hover {
-  border-color: #f5c518;
-  color: #f5c518;
+  border-color: var(--white);
+  color: var(--white);
 }
 
 .footer__social-link svg { width: 16px; height: 16px; }
