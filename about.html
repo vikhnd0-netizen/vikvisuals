@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — VikVisuals</title>
+  <meta name="description" content="VikVisuals — London-based photographer and videographer. Learn about Vik and the work behind the lens.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VikVisuals</a>
+      <ul class="nav__links">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Services ▾
+          </button>
+          <div class="nav__dropdown-menu" role="menu">
+            <a href="services/professional.html" role="menuitem">Professional Services</a>
+            <a href="services/charity.html" role="menuitem">Charity</a>
+            <a href="services/events-hospitality.html" role="menuitem">Events &amp; Hospitality</a>
+            <a href="services/food-restaurant.html" role="menuitem">Food &amp; Restaurant</a>
+          </div>
+        </li>
+        <li><a href="gallery.html">Work</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" aria-label="Mobile navigation">
+    <button class="nav__mobile-dropdown-trigger" aria-expanded="false">Services ▾</button>
+    <div class="nav__mobile-sub">
+      <a href="services/professional.html">Professional Services</a>
+      <a href="services/charity.html">Charity</a>
+      <a href="services/events-hospitality.html">Events &amp; Hospitality</a>
+      <a href="services/food-restaurant.html">Food &amp; Restaurant</a>
+    </div>
+    <a href="gallery.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero hero--service" aria-label="About hero" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80');background-size:cover;background-position:center top;">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">About</h1>
+        <p class="hero__sub">London-based photographer and videographer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About Section ── -->
+  <section class="section intro-block reveal" aria-label="About Vik">
+    <div class="container">
+      <div class="grid-2col">
+        <div>
+          <span class="section__tag">The person behind the lens</span>
+          <div class="accent-line"></div>
+          <h2 class="section__title">The person behind the lens</h2>
+          <div class="intro-block__body">
+            <p>I'm Vik — a London-based photographer and videographer specialising in professional services, charities, corporate events and food &amp; hospitality.</p>
+            <p>Before going freelance, I spent several years working in-house, producing content across a range of industries — including the automotive sector with Topaz Detailing, and financial services with Sedulo, a Top 100 UK professional services firm.</p>
+            <p>I work calmly and efficiently, fitting around you and your team rather than the other way around. No outsourcing, no layers — just a reliable partner who understands your brand.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.75rem;display:inline-block;">Get in Touch</a>
+        </div>
+        <div class="reveal" style="transition-delay:0.15s;">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+            alt="Vik — London-based photographer and videographer"
+            class="intro-block__img"
+            style="aspect-ratio:2/3;object-fit:cover;"
+            width="500" height="750"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What I Offer ── -->
+  <section class="section services-grid reveal" aria-label="What I Offer">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__tag">Specialisms</span>
+        <h2 class="section__title">What I Offer</h2>
+        <div class="accent-line accent-line--center"></div>
+      </div>
+      <div class="grid-3">
+        <div class="service-card reveal">
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Photography</h3>
+          <p class="service-card__body">Headshots, events, editorial, brand imagery. Clean, natural photography that reflects your organisation and builds trust.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.1s;">
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">Videography</h3>
+          <p class="service-card__body">Leadership interviews, event coverage, social content. Professional video that communicates clearly and efficiently.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.2s;">
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">Full Packages</h3>
+          <p class="service-card__body">Combined photo and video for campaigns and events. One person, one brief, consistent output across all formats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trusted By ── -->
+  <div class="logos-strip reveal">
+    <div class="container">
+      <p class="logos-strip__label">Trusted by organisations across the UK.</p>
+      <ul class="logos-strip__list">
+        <li class="logos-strip__item">Sedulo</li>
+        <li class="logos-strip__item">Genetic Alliance UK</li>
+        <li class="logos-strip__item">HBA Support</li>
+        <li class="logos-strip__item">Nexus</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── CTA Banner ── -->
+  <div class="cta-banner reveal">
+    <div class="container">
+      <h2 class="cta-banner__title">Ready to work together? Get in touch.</h2>
+      <a href="contact.html" class="btn btn-primary">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">VikVisuals</div>
+          <p class="footer__tagline">London-based photographer &amp; videographer for professional services, charities and events.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Quick Links</p>
+          <ul class="footer__links">
+            <li><a href="services/professional.html">Professional Services</a></li>
+            <li><a href="services/charity.html">Charity</a></li>
+            <li><a href="services/events-hospitality.html">Events &amp; Hospitality</a></li>
+            <li><a href="services/food-restaurant.html">Food &amp; Restaurant</a></li>
+            <li><a href="gallery.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Get in Touch</p>
+          <div class="footer__contact-info">
+            <a href="mailto:hello@vikvisuals.co.uk">hello@vikvisuals.co.uk</a>
+            <span>London-based, working nationwide</span>
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 VikVisuals. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
