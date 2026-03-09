@@ -56,7 +56,15 @@
 
 .hero__title {
   color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.2;
+  font-weight: 700;
   margin-bottom: 1.25rem;
+}
+
+.hero__title-accent {
+  font-weight: 300;
+  color: rgba(255,255,255,0.82);
 }
 
 .hero__sub {
@@ -175,6 +183,7 @@
   font-weight: 300;
   color: var(--navy);
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   display: block;
   margin-bottom: 8px;
 }
